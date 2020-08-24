@@ -47,3 +47,30 @@ class XMLConversionTestCase(TestCase):
                     },
                 ],
             })
+
+
+    def test_convert_wrong_format(self):
+        with (TEST_DIR / Path('not-xml.txt')).open() as fp:
+            response = self.client.post('/', {
+                'file': fp,
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertFormError(
+                response,
+                'form',
+                'file',
+                'Invalid file. Please upload a valid XML file.'
+            )
+
+    def test_convert_broken_xml(self):
+        with (TEST_DIR / Path('broken-xml.xml')).open() as fp:
+            response = self.client.post('/', {
+                'file': fp,
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertFormError(
+                response,
+                'form',
+                'file',
+                'Invalid file. Please upload a valid XML file.'
+            )
