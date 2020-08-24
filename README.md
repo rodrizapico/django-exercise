@@ -1,3 +1,5 @@
+[![rodrizapico](https://circleci.com/gh/rodrizapico/django-exercise.svg?style=svg)](https://circleci.com/gh/rodrizapico/django-exercise)
+
 # Apollo Back-End Engineering Challenge
 
 This challenge is designed to evaluate three things:
