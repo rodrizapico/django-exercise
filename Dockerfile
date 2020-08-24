@@ -17,4 +17,4 @@ COPY . .
 RUN useradd -ms /bin/bash exercise
 USER exercise
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD gunicorn -c python:gunicorn_config exercise.wsgi:application

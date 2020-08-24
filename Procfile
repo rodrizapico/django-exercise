@@ -1,0 +1,1 @@
+web: gunicorn -c python:gunicorn_config exercise.wsgi:application

@@ -44,8 +44,12 @@ should be converted to
 
 The tests provide additional examples of more complex conversions.
 
-## Additions
+## Additions / Modifications based on given proyect
 
-Alternatively, I've added a `Dockerfile` & `docker-compose.yml` if you prefer running the application in a container.
+I've added a `Dockerfile` & `docker-compose.yml` if you prefer running the application in a container.
 
 You should also set the corresponding env variables (or if using the provided docker-compose, add a `.env` file) according to the provided `.env.sample`. I've made these changes since some stuff should not be public, such as Django's secret key, and others should be easily configurable based on the environment, such as DEBUG mode.
+
+I also edited the `addresses.xml` test file since it didn't match what the corresponding test was expecting, and added some additional tests.
+
+Finally, I implemented CI using CircleCI (as seen by the badge on top of this README), and made a basic deploy on heroku, which can be located here: [Django Exercise Sample](https://django-exercise-sample.herokuapp.com/).
