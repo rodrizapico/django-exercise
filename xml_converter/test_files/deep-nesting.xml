@@ -1,0 +1,31 @@
+<PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">
+  <Address Shipping="True" Billing="True">
+    <Name>Ellen Adams</Name>
+    <Street>123 Maple Street</Street>
+    <City>Mill Valley</City>
+    <State>CA</State>
+    <Zip>10999</Zip>
+    <Country>USA</Country>
+  </Address>
+  <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>
+  <Items>
+    <Item PartNumber="872-AA">
+      <Product>
+        <Name>Lawnmower</Name>
+        <Description>The lawnmower everyone deserves!</Description>
+      </Product>
+      <Quantity>1</Quantity>
+      <USPrice>148.95</USPrice>
+      <Comment>Confirm this is electric</Comment>
+    </Item>
+    <Item PartNumber="926-AA">
+      <Product>
+        <Name>Baby Monitor</Name>
+        <Description>Keep track of your baby with this baby monitor.</Description>
+      </Product>
+      <Quantity>2</Quantity>
+      <USPrice>39.98</USPrice>
+      <ShipDate>1999-05-21</ShipDate>
+    </Item>
+  </Items> 
+</PurchaseOrder>
