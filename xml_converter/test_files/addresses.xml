@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Root>
+<Addresses>
     <Address>
         <StreetLine1>123 Main St.</StreetLine1>
-        <StreetLine2>Suite 4</StreetLine2>
+        <StreetLine2>Suite 400</StreetLine2>
         <City>San Francisco</City>
         <State>CA</State>
         <PostCode>94103</PostCode>
@@ -13,4 +13,4 @@
         <State>CA</State>
         <PostCode>94108</PostCode>
     </Address>
-</Root>
+</Addresses>

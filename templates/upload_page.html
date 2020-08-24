@@ -2,9 +2,12 @@
     <head></head>
     <body>
         <p>
-            Modify this page to include a form where users can submit an XML file.
-            When they click on the submit button, the XML file should be converted into JSON and
-            returned to the user.
+            Upload an XML file here to convert it into JSON.
         </p>
+        <form enctype="multipart/form-data" action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
